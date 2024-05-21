@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Marniners.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <asp:ContentPlaceHolder ID="MetaTags" runat="server"></asp:ContentPlaceHolder>  
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="Content/main.css" rel="stylesheet" />
+    <link href="Content/banner.css" rel="stylesheet" />
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+   	<div class="top-banner"></div>
+    <header>
+	    <asp:ContentPlaceHolder ID="navSection" runat="server"></asp:ContentPlaceHolder>	  
+    </header>
+
+    <asp:ContentPlaceHolder ID="MainBody" runat="server"></asp:ContentPlaceHolder>
+
+     <footer class="footer">     
+		<div class="footer-nav container-fluid text-center d-none d-lg-block">
+			<div  class="footer-banner">
+				<ul>
+					<li><a class="nav-link" href="../room-types/">Room Types</a></li>
+					<li><a class="nav-link" href="../amenities/">Amenities</a></li>
+					<li><a class="nav-link" href="../area-attractions/">Area Attractions</a></li>
+					<li><a class="nav-link" href="../storage-unit/">Storage Units</a></li>
+					<li><a class="nav-link" href="" target="_blank">Reservations</a></li>
+					<li><a class="nav-link" href="../contact-us/">Contact Us</a></li>
+				</ul> 
+			</div>
+		</div>
+		<div class="sm-box-1160 mt-5 row center-container">
+			<div class="col-lg-2 col-md-2 d-none d-md-block d-lg-block">
+				<a href="https://Hotelssuites.com/"><img src="../images/footer-logo.png" alt="Hotels Suites Logo" class="img-fluid"/></a>
+			</div>
+			<div class="ms-2 col-lg-7 col-md-7 col-sm-12">
+				<p class="font14">Hotels Suites is conveniently located in a quiet residential neighborhood less than six miles from Submarine Base. </p>
+				<div class="row">				
+					<div class="col-lg-6 col-md-12">
+						<p><i class="fa-solid fa-phone-volume"></i><a href="tel:9999990004" class="telephone">(999) 999-0004</a></p>
+						<p><i class="fa-solid fa-envelope"></i><a href="mailto:info@Hotelssuites.com" class="email">info@Hotelssuites.com</a></p>
+						<p class="d-block d-sm-block d-md-none"><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/" class="address" target="_blank">Hotel Address</a></p>
+				
+					</div>
+					<div class="col-lg-6 col-md-12">
+						<p class="m-0 darkgrey"><strong>HOURS OF OPERATION</strong></p>
+						<p class="blue">Monday - Friday 8:00 AM - 8:00 PM</p>
+						<p class="blue">Saturday & Sunday 9:00 AM - 2:00 PM</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 d-none d-md-block d-lg-block">
+				<img src="../images/base-logo.png" alt="Submarine BAse Logo" class="img-fluid"/>
+			</div>
+		</div>  
+		<div class="footer-copyright">
+			<a href="https://goo.gl/maps/" target="_blank" class="d-none d-md-block"> Hotels Suites  | Address  |   Georgia 55548</a>
+			<p>All rights reserved &#169; <asp:Label id="copyyear" runat="server"></asp:Label> Hotels Suites</p>
+		</div>
+    </footer>
+	
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+ 
+
+<asp:ContentPlaceHolder ID="footerextra" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>
