@@ -1,0 +1,38 @@
+.simple-div-zone {
+}
+
+.simple-div{
+}
+
+.simple-slide {
+  display: none;
+  background: #fff;
+  padding: 20px;
+
+}
+
+.simple-slide-heading {
+  font-family: 'Lobster', sans-serif;
+  font-size: 10em;
+  text-align: center;
+}
+
+.simple-active {
+  display: block;
+}
+
+.simple-slide-controls {
+ 
+}
+
+.simple-slide-button, .simple-slide-button:focus, .simple-slide-button:hover  {
+    background: transparent;
+    display: inline;
+    padding: 10px;  
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 56px;
+}
+

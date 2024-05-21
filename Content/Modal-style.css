@@ -1,0 +1,28 @@
+﻿
+.modal-fullscreen {
+    width: 100vw;
+    max-width: none;
+    height: 80vh;
+    margin: 140px 0px 0px 0px;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-header, .modal-footer {
+    border: transparent;
+    display: block;
+    text-align: right;
+}
+
+.close {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 70px;
+    margin: 0px 20px;
+}
+
+
+

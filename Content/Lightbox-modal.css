@@ -1,0 +1,160 @@
+﻿
+/* BASIC STYLES
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --yellow: #fffbbc;
+    --lightbox: #000000;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+    .modal-header .navbar {
+        background-color: transparent !important;
+    }
+}
+
+
+h5.bluePhoto {
+    color: #70899b;
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@media (max-width: 700px) {
+}
+
+
+/* IMAGE GRID STYLES
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.image-grid figure {
+    margin-bottom: 0;
+}
+
+.image-grid img {
+}
+
+.image-grid a:hover img {
+    opacity: 1;
+    -webkit-animation: flash 2s;
+    animation: flash 2s;
+}
+
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* LIGHTBOX STYLES
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.lightbox-modal {
+    background: #000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 40;
+}
+
+    .lightbox-modal .modal-header {
+        background-color: rgba(0,0,0,0.6);
+    }
+
+button.nav-link {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+    button.nav-link:hover {
+        color: inherit;
+    }
+
+.modal-header .navbar .nav-item {
+    margin-right: .25rem;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Montserrat-Bold;
+    color: #feffff !important;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.modal-header .navbar-nav {
+    flex-direction: row;
+}
+
+.lightbox-modal .modal-content {
+    background: var(--lightbox);
+}
+
+
+
+.lightbox-modal .modal-body {
+    display: table-row;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+.lightbox-modal img {
+    width: auto;
+    max-height: 60vh;
+    max-width: 100%;
+}
+
+.lightbox-modal .carousel-caption {
+    bottom: 0;
+    display: contents;
+}
+
+.carousel-caption p {
+    color: #fff !important;
+}
+
+.lightbox-modal .carousel-control-prev,
+.lightbox-modal .carousel-control-next {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    width: auto;
+}
+
+.lightbox-modal .carousel-control-prev {
+    left: 10px;
+}
+
+.lightbox-modal .carousel-control-next {
+    right: 10px;
+}
+
+
+
+
+

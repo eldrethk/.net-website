@@ -1,0 +1,138 @@
+.top-banner-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center;
+}
+.top-banner-section .banner-image-div {
+  grid-area: 1/1/2/2;
+}
+.top-banner-section .banner-overlay-div {
+  grid-area: 1/1/2/2;
+}
+.top-banner-section .banner-text-div {
+  grid-area: 1/1/2/2;
+}
+
+.banner-image {
+  display: grid;
+  min-width: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay-div {
+  display: grid;
+  max-width: 100%;
+  background: black;
+  background: linear-gradient(60deg, rgba(0, 0, 0, 0.7777485994) 30%, rgba(255, 255, 255, 0) 100%);
+}
+
+.banner-text-div {
+  display: grid;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-text{
+	background-color: rgba(250,250, 250, .8);
+    padding: 24px 100px;
+}
+
+.banner-h1-text {
+  font-size: calc(10pt + 0.15vw);
+  letter-spacing: 0.05em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+}
+
+.banner-body-text {
+  font-size: calc(10pt + 0.15vw);
+  margin-top: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+.banner-body-text:hover {
+  color: white;
+}
+.banner-body-text:visited {
+  color: white;
+}
+.banner-body-text:active {
+  color: white;
+}
+
+.banner-btn {
+  margin-top: 1em;
+}
+
+.banner-btn-item {
+  font-size: calc(8pt + 0.15vw);
+  padding-top: calc(0.5em + 0.08vw);
+  padding-bottom: calc(0.5em + 0.08vw);
+  padding-left: calc(0.5em + 0.08vw);
+  padding-right: calc(0.5em + 0.08vw);
+  color: blue;
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid white;
+}
+.banner-btn-item:link {
+  text-decoration: none;
+}
+.banner-btn-item:visited {
+  text-decoration: none;
+}
+
+/*Mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+	.banner-text{
+		background-color: rgba(250,250, 250, .8);
+		padding: 12px;
+	}
+}
+
+
+/*Mobile devices landscape*/
+@media only screen and (min-width: 480px) and (max-width: 885px) {
+	.banner-text{
+		background-color: rgba(250,250, 250, .8);
+		padding: 24px 50px;
+	}
+}
+
+/*Tablet*/
+@media only screen and (min-width: 886px) and (max-width: 979px) {
+	.banner-text{
+		background-color: rgba(250,250, 250, .8);
+		padding: 24px 50px;
+	}
+}
+
+/*<section class="top-banner-section">
+		  <!-- The CSS grid area that displays the image (layer 1) -->
+		  <div class="banner-image-div">
+			<img class="banner-image" src="images/storage-unit-homepage.png" alt="Banner Image" />
+		  </div>
+		  <!-- The CSS grid area that displays the semi-transparent gradient overlay (layer 2) -->
+		  <div class="banner-overlay-div"></div>
+		  <!-- The CSS grid area that displays the content (layer 3) -->
+		  <div class="banner-text-div">
+			<span class="banner-text">
+			  <p class="banner-h1-text">Remain relevant in today's technology-driven economy</p>
+			  <p class="banner-body-text">Learn how agile can give you a competitive edge.</p>
+			  <p class="banner-btn"><a class="banner-btn-item" href="https://www.cambermast.com">Get started &#8594;</a></p>
+			</span>
+		  </div>
+		</section>
+		
+		*/
